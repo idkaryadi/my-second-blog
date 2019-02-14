@@ -1,0 +1,10 @@
+.box-350 {
+    width: 320px;
+    height: 300px;
+    margin: 0px 10px; 
+    border: 1px solid gray
+  }
+
+.product-img{
+    /* padding: 0px; */
+}

@@ -1,0 +1,23 @@
+{% extends 'home/template.html' %}
+{% load static %}
+
+{% block isi %}
+<section>
+    <div class="container-fluid">
+        <div class="row">
+        {% for data in barangs %}
+        <div class="col-md-4 ">
+            <div class="box-350">
+            <img src="../../static/images/{data.images}}" class="product-img"><br>
+            <span>{{data.nama_barang}}</span><br>
+            <span>{{data.harga}}</span><br>
+            <a href="{% url 'post_detail' post_id=data.id %}">Lihat Detail</a> 
+            <!--  -->
+        </div>
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

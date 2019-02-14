@@ -1,0 +1,21 @@
+{% extends 'home/template.html' %}
+{% load static %}
+
+{% block isi %}
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="box-350">
+                <img src="../../../static/images/{{barang.images}}" class="product-img"><br>
+                <span>{{barang.nama_barang}}</span><br>
+                <span>{{barang.harga}}</span><br>
+                <span>{{barang.diskripsi_produk}}</span><br>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
