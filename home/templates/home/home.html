@@ -8,7 +8,7 @@
         {% for data in barangs %}
         <div class="col-md-4 ">
             <div class="box-350">
-            <img src="../../static/images/{data.images}}" class="product-img"><br>
+            <img src="../../static/images/{{data.images}}" class="product-img"><br>
             <span>{{data.nama_barang}}</span><br>
             <span>{{data.harga}}</span><br>
             <a href="{% url 'post_detail' post_id=data.id %}">Lihat Detail</a> 
